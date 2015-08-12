@@ -1,0 +1,54 @@
+<h3>教學意見調查表</h3>
+<form method="post" action="mailto:cooperwjchang@me.com?subject=教學意見調查表">
+<fieldset>
+<legend>個人及課程調查</legend>
+<ol>
+    <li>
+    科目名稱：<input type="text" name="subject" autofocus/>
+    </li>
+    <li>
+    請選擇系所：
+    <select size="1" name="department">
+    <option>英文系</option>
+    <option>法律系</option>
+    <option>資管系</option>
+    <option>電子工程系</option>
+    <option>資訊工程系</option>
+    <option>化工系</option>
+    </select>
+    </li>
+    <li>
+    講師：<input type="text" name="teacher"/>   
+    </li>
+    <li>
+    性別：
+    <input type="radio" name="sex" value="boy" checked/>男生
+    <input type="radio" name="sex" value="girl" />女生    
+    </li>
+    <li>
+    開課日期：<input type="date" name="startdate"/>
+    </li>
+</ol>    
+</fieldset>
+
+
+<fieldset>
+<legend>意見調查表</legend>
+<ol>
+    <li>
+    這門課你的出席狀況：
+    <input type="radio" name="assist" value="沒有缺客"/>沒有缺課
+    <input type="radio" name="assist" value="缺課1~3次"/>缺課1~3次
+    <input type="radio" name="assist" value="缺課4~6次"/>缺課4~6次
+    <input type="radio" name="assist" value="缺課6次以上"/>缺課6次以上
+    </li>  
+    <li>
+    請簡述你對這堂課的建議
+    <textarea name="hope" rows="3" cols="50"></textarea>
+    </li>
+</ol>    
+</fieldset>
+<input type="submit" value="送出"/>
+<input type="reset" value="重填"/>
+
+</form>
